@@ -1,0 +1,11 @@
+﻿hntxxx_excluded_from_hre_election_modifier = {
+	modifier = {
+		desc = hntxxx_tooltip_non_player_elective
+		add = {
+			subtract = 10000
+		}
+		scope:candidate = {
+			has_character_modifier = hntxxx_exclude_from_hre_election_modifier
+		}
+	}
+}

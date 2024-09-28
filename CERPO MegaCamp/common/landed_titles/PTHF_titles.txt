@@ -1,0 +1,14 @@
+﻿d_sectihof_prefer_religious = {
+	color = { 255 0 255 }
+
+	definite_form = yes
+
+	destroy_if_invalid_heir = yes
+	no_automatic_claims = yes
+	definite_form = yes
+	always_follows_primary_heir = yes
+}
+
+d_sectihof_temporary_title_history_storage = {
+	color = { 0 255 255 }
+}

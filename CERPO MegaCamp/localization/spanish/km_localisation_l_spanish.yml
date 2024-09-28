@@ -1,0 +1,96 @@
+﻿l_spanish:
+ 
+ # Header
+ kmc: "Administrador de Caballeros"
+ kmc_usage_tt: "Desmarca las casillas de verificación para no permitir que ciertos grupos de personajes sirvan como caballeros. Cuando están desmarcadas, todos los personajes de ese grupo ya no serán caballeros y tampoco aparecerán en la lista. Si deseas permitir manualmente que un personaje específico de ese grupo sirva como caballero, desmarca su casilla de K.M antes de desautorizar a su grupo para servir como caballeros."
+ 
+ kmc_toggle_mp_active: "MJ"
+ kmc_toggle_mp_active_tt: "Cambia al modo multijugador: Las configuraciones están vinculadas al personaje y deben restablecerse después de la muerte."
+ 
+ kmc_dynasty: "$game_concept_dynasty$"
+ kmc_family: "$game_concept_family$"
+ kmc_relations: "$game_concept_relations$"
+ kmc_realm: "$game_concept_realm$"
+ kmc_court: "$game_concept_court$"
+ kmc_vassals: "$game_concept_vassals$"
+ kmc_prowess: "$game_concept_prowess$"
+ kmc_traits: "$game_concept_traits$"
+ kmc_liege: "$game_concept_liege$"
+ 
+ # Dynasty
+ kmc_toggle_dynasty_cannot_be_knight: "$game_concept_dynasty$"
+ kmc_toggle_dynasty_cannot_be_knight_tt: "$game_concept_dynasty_desc$"
+ 
+ kmc_toggle_house_cannot_be_knight: "$game_concept_house$"
+ kmc_toggle_house_cannot_be_knight_tt: "$game_concept_house_desc$"
+ 
+ kmc_toggle_spouses_cannot_be_knight: "$game_concept_spouses$"
+ kmc_toggle_spouses_cannot_be_knight_tt: "$game_concept_spouse_desc$"
+ 
+ kmc_toggle_children_cannot_be_knight: "$game_concept_children$"
+ kmc_toggle_children_cannot_be_knight_tt: "Si está marcado, mis hijos/nietos pueden servir como caballeros."
+ 
+ kmc_toggle_child_spouses_cannot_be_knight: "$game_concept_children$ - $game_concept_spouses$"
+ kmc_toggle_child_spouses_cannot_be_knight_tt: "Si está marcado, los cónyuges de mis hijos/nietos pueden servir como caballeros."
+ 
+ kmc_toggle_my_heir_cannot_be_knight: "$game_concept_player_heir$"
+ kmc_toggle_my_heir_cannot_be_knight_tt: "$game_concept_player_heir_desc$"
+ 
+ # Relations
+ kmc_toggle_my_lovers_cannot_be_knight: "$game_concept_lovers$"
+ kmc_toggle_my_lovers_cannot_be_knight_tt: "$game_concept_lover_desc$"
+ 
+ # Realm
+ kmc_toggle_highborn_cannot_be_knight: "$game_concept_nobles$"
+ kmc_toggle_highborn_cannot_be_knight_tt: "$game_concept_noble_desc$"
+ 
+ kmc_toggle_lowborn_cannot_be_knight: "$game_concept_commoners$"
+ kmc_toggle_lowborn_cannot_be_knight_tt: "$game_concept_commoner_desc$"
+ 
+ # Court
+ kmc_toggle_councillors_cannot_be_knight: "$game_concept_councillors$"
+ kmc_toggle_councillors_cannot_be_knight_tt: "$game_concept_councillor_desc$"
+ 
+ kmc_toggle_court_positions_cannot_be_knight: "$game_concept_court_positions$"
+ kmc_toggle_court_positions_cannot_be_knight_tt: "$game_concept_court_position_desc$"
+ 
+ kmc_toggle_unlanded_cannot_be_knight: "$game_concept_courtiers$"
+ kmc_toggle_unlanded_cannot_be_knight_tt: "$game_concept_courtier_desc$"
+ 
+ # Vassals
+ kmc_toggle_landed_cannot_be_knight: "$game_concept_rulers$"
+ kmc_toggle_landed_cannot_be_knight_tt: "$game_concept_ruler_desc$"
+ 
+ kmc_toggle_barons_cannot_be_knight: "$game_concept_barons$"
+ kmc_toggle_barons_cannot_be_knight_tt: "$game_concept_barony_desc$"
+ 
+ # Prowess
+ kmc_toggle_terrible_fighters_cannot_be_knight: "$SKILL_TERRIBLE$"
+ kmc_toggle_terrible_fighters_cannot_be_knight_tt: "$game_concept_prowess_skill$ < 5[prowess_i]"
+ 
+ kmc_toggle_poor_fighters_cannot_be_knight: "$SKILL_POOR$"
+ kmc_toggle_poor_fighters_cannot_be_knight_tt: "$game_concept_prowess_skill$ 5 - 8[prowess_i]"
+ 
+ kmc_toggle_average_fighters_cannot_be_knight: "$SKILL_AVERAGE$"
+ kmc_toggle_average_fighters_cannot_be_knight_tt: "$game_concept_prowess_skill$ 9 - 12[prowess_i]"
+ 
+ kmc_toggle_good_fighters_cannot_be_knight: "$SKILL_GOOD$"
+ kmc_toggle_good_fighters_cannot_be_knight_tt: "$game_concept_prowess_skill$ 13 - 16[prowess_i]"
+ 
+ kmc_toggle_excellent_fighters_cannot_be_knight: "$SKILL_EXCELLENT$"
+ kmc_toggle_excellent_fighters_cannot_be_knight_tt: "$game_concept_prowess_skill$ > 16[prowess_i]"
+ 
+ # Traits
+ kmc_toggle_wounded_cannot_be_knight: "$trait_wounded_1$"
+ kmc_toggle_wounded_cannot_be_knight_tt: "Si está marcado, los personajes heridos pueden servir como caballeros."
+ 
+ kmc_toggle_pregnant_cannot_be_knight: "$trait_pregnant$"
+ kmc_toggle_pregnant_cannot_be_knight_tt: "Cuando está activado, los personajes embarazados pueden servir como caballeros."
+ 
+ # Player can be Knight
+ kmc_toggle_player_can_be_knight: "$CV_TT_YOU$"
+ kmc_toggle_player_can_be_knight_tt: "Cuando está activado, el jugador puede servir como caballero en el ejército del señor."
+ 
+ # Manual Selection
+ kmc_toggle_exclude_label: "K.M."
+ kmc_toggle_exclude_label_tt: "Si no se marca, el personaje se excluye de la configuración del administrador de caballeros y puede ser un caballero"

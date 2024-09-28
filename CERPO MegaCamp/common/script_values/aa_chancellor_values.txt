@@ -1,0 +1,337 @@
+﻿#DF959DF6C1AED8DEC9B752A04842175B64C859AE
+
+#CFDD108324B08294FD3CE4F799FF4AB2F3640689
+# Calculated max opinion
+chancellor_foreign_affairs_opinion_max = {
+	add = chancellor_foreign_affairs_opinion_base
+	# Add bonus from Clerical Justification:
+	if = {
+		limit = {
+			scope:councillor_liege = { has_perk = adaptive_traditions_perk }
+		}
+		add = chancellor_foreign_affairs_opinion_max_perk_bonus_modifier
+	}
+	# Add bonus from Bureaucrats
+	if = {
+		limit = {
+			councillor_liege_has_erudition_legacy_5_perk = yes
+		}
+		add = chancellor_foreign_affairs_opinion_max_erudition_modifier
+	}
+	# Add bonus from Family Business
+	if = {
+		limit = {
+			councillor_liege_has_family_business_bonus = yes
+		}
+		add = chancellor_foreign_affairs_opinion_max_family_business_modifier
+	}
+	# Add bonus from trait chancellor_3
+	if = {
+		limit = {
+			has_trait_xp = { trait = lifestyle_chancellor value >= 100 }
+		}
+		add = chancellor_task_chancellor_3_modifier
+	}
+	# Add bonus from trait chancellor_2
+	else_if = {
+		limit = {
+			has_trait_xp = { trait = lifestyle_chancellor value >= 50 }
+		}
+		add = chancellor_task_chancellor_2_modifier
+	}
+	# Add bonus from trait chancellor_1
+	else_if = {
+		limit = {
+			has_trait = lifestyle_chancellor
+		}
+		
+		add = chancellor_task_chancellor_1_modifier
+	}
+	# Add bonus from FP3 Consulted House
+	if = {
+		limit = {
+			councillor_liege_has_consulted_house_bonus = yes
+		}
+		add = chancellor_foreign_affairs_opinion_max_consulted_house_modifier
+	}
+}
+
+#76752DF9CEEFE154465821B75721074044B8E2EF
+chancellor_domestic_affairs_opinion_max = {
+	add = chancellor_domestic_affairs_opinion_base
+	if = {
+		limit = {
+			scope:councillor_liege = { has_perk = chains_of_loyalty_perk }
+		}
+		add = chancellor_domestic_affairs_opinion_chains_of_loyalty_bonus
+	}
+	if = {
+		limit = {
+			councillor_liege_has_erudition_legacy_5_perk = yes
+		}
+		add = chancellor_domestic_affairs_opinion_erudition_bonus
+	}
+	if = {
+		limit = {
+			councillor_liege_has_family_business_bonus = yes
+		}
+		add = chancellor_domestic_affairs_opinion_family_business_bonus
+	}
+	# Add bonus from trait chancellor_3
+	if = {
+		limit = {
+			has_trait_xp = { trait = lifestyle_chancellor value >= 100 }
+		}
+		add = chancellor_task_chancellor_3_modifier
+	}
+	# Add bonus from trait chancellor_2
+	else_if = {
+		limit = {
+			has_trait_xp = { trait = lifestyle_chancellor value >= 50 }
+		}
+		add = chancellor_task_chancellor_2_modifier
+	}
+	# Add bonus from trait chancellor_1
+	else_if = {
+		limit = {
+			has_trait = lifestyle_chancellor
+		}
+		add = chancellor_task_chancellor_1_modifier
+	}
+	if = {
+		limit = {
+			councillor_liege_has_consulted_house_bonus = yes
+		}
+		add = chancellor_domestic_affairs_opinion_consulted_house_bonus
+	}
+}
+
+#7DA34B08719E99F65C47800B9721E319346B9ECC
+# Final calculation (used for tooltips only)
+chancellor_foreign_affairs_prestige_total = {
+	add = chancellor_foreign_affairs_prestige_gain_base
+	add = chancellor_foreign_affairs_prestige_gain_perk_bonus_modifier
+	add = chancellor_foreign_affairs_prestige_gain_erudition_modifier
+	add = chancellor_foreign_affairs_prestige_gain_family_business_modifier
+	add = chancellor_foreign_affairs_prestige_gain_consulted_house_modifier
+	add = chancellor_foreign_affairs_prestige_gain_chancellor_modifier
+}
+
+chancellor_domestic_affairs_tyranny_total = {
+	add = chancellor_domestic_affairs_tyranny_base
+	add = chancellor_domestic_affairs_tyranny_chains_of_loyalty_bonus
+	add = chancellor_domestic_affairs_tyranny_erudition_bonus
+	add = chancellor_domestic_affairs_tyranny_family_business_bonus
+	add = chancellor_domestic_affairs_tyranny_consulted_house_bonus
+	add = chancellor_domestic_affairs_tyranny_chancellor_trait_modifier
+}
+
+#CF2F02BB3416DC7696D396024A2B97527F5F4DF6
+chancellor_bestow_royal_favor_opinion_increase_per_success = {
+	add = chancellor_bestow_royal_favor_opinion_increase_per_success_base
+	add = chancellor_bestow_royal_favor_opinion_increase_per_success_grandeur
+	add = chancellor_bestow_royal_favor_opinion_gain_erudition_bonus
+	add = chancellor_bestow_royal_favor_opinion_gain_family_business_bonus
+	add = chancellor_bestow_royal_favor_opinion_gain_consulted_house_bonus
+	add = chancellor_bestow_royal_favor_opinion_gain_chancellor_trait_bonus
+}
+
+#F4AB013D8271CCD8B6C32C5624350C031ABE989C
+chancellor_bestow_royal_favor_prestige_total = {
+	add = chancellor_bestow_royal_favor_prestige_gain_base
+	add = chancellor_bestow_favor_prestige_gain_erudition_modifier
+	add = chancellor_bestow_favor_prestige_gain_family_business_modifier
+	add = chancellor_bestow_favor_prestige_gain_consulted_house_modifier
+	add = chancellor_bestow_favor_prestige_gain_chancellor_modifier
+}
+
+# ========================= New value ===============================================
+
+chancellor_task_chancellor_1_value = 0.05
+chancellor_task_chancellor_2_value = 0.10
+chancellor_task_chancellor_3_value = 0.15
+
+chancellor_task_chancellor_1_modifier = {
+	add = chancellor_foreign_affairs_opinion_base
+	multiply = chancellor_task_chancellor_1_value
+}
+chancellor_integrate_title_chancellor_1_bonus = {
+	add = chancellor_integrate_title_progress_gain
+	multiply = chancellor_task_chancellor_1_value
+}
+
+chancellor_task_chancellor_2_modifier = {
+	add = chancellor_foreign_affairs_opinion_base
+	multiply = chancellor_task_chancellor_2_value
+}
+chancellor_integrate_title_chancellor_2_bonus = {
+	add = chancellor_integrate_title_progress_gain
+	multiply = chancellor_task_chancellor_2_value
+}
+
+chancellor_task_chancellor_3_modifier = {
+	add = chancellor_foreign_affairs_opinion_base
+	multiply = chancellor_task_chancellor_3_value
+}
+chancellor_integrate_title_chancellor_3_bonus = {
+	add = chancellor_integrate_title_progress_gain
+	multiply = chancellor_task_chancellor_3_value
+}
+
+
+# chancellor bonus
+chancellor_foreign_affairs_prestige_gain_chancellor_modifier = {
+	if = {
+		limit = {
+			has_trait = lifestyle_chancellor
+		}
+		add = chancellor_foreign_affairs_prestige_gain_base
+		multiply = {
+			# Add bonus from trait chancellor_3
+			if = {
+				limit = {
+					has_trait_xp = { trait = lifestyle_chancellor value >= 100 }
+				}
+				add = chancellor_task_chancellor_3_value
+			}
+			# Add bonus from trait chancellor_2
+			else_if = {
+				limit = {
+					has_trait_xp = { trait = lifestyle_chancellor value >= 50 }
+				}
+				add = chancellor_task_chancellor_2_value
+			}
+			# Add bonus from trait chancellor_1
+			else_if = {
+				limit = {
+					has_trait = lifestyle_chancellor
+				}
+				add = chancellor_task_chancellor_1_value
+			}
+		}
+	}
+}
+
+chancellor_domestic_affairs_tyranny_chancellor_trait_modifier = {
+	value = 0
+	if = {
+		limit = {
+			has_trait = lifestyle_chancellor
+		}
+		add = {
+			value = chancellor_domestic_affairs_tyranny_base
+			multiply = {
+				# Add bonus from trait chancellor_3
+				if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_chancellor value >= 100 }
+					}
+					add = chancellor_task_chancellor_3_value
+				}
+				# Add bonus from trait chancellor_2
+				else_if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_chancellor value >= 50 }
+					}
+					add = chancellor_task_chancellor_2_value
+				}
+				# Add bonus from trait chancellor_1
+				else = {
+					add = chancellor_task_chancellor_1_value
+				}
+			}
+		}
+	}
+}
+
+chancellor_bestow_royal_favor_opinion_gain_chancellor_trait_bonus = {
+	scope:councillor = {
+		if = {
+			limit = { 
+				has_trait = lifestyle_chancellor 
+			}
+			add = chancellor_bestow_royal_favor_opinion_increase_per_success_base
+			multiply = {
+				# Add bonus from trait chancellor_3
+				if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_chancellor value >= 100 }
+					}
+					add = chancellor_task_chancellor_3_value
+				}
+				# Add bonus from trait chancellor_2
+				else_if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_chancellor value >= 50 }
+					}
+					add = chancellor_task_chancellor_2_value
+				}
+				# Add bonus from trait chancellor_1
+				else = {
+					add = chancellor_task_chancellor_1_value
+				}
+			}
+			round = yes
+		}
+	}	
+}
+
+chancellor_bestow_favor_prestige_gain_chancellor_modifier = {
+	scope:councillor = {
+		if = {
+			limit = {
+				has_trait = lifestyle_chancellor
+			}
+			add = chancellor_bestow_royal_favor_prestige_gain_base
+			multiply = {
+				# Add bonus from trait chancellor_3
+				if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_chancellor value >= 100 }
+					}
+					add = chancellor_task_chancellor_3_value
+				}
+				# Add bonus from trait chancellor_2
+				else_if = {
+					limit = {
+						has_trait_xp = { trait = lifestyle_chancellor value >= 50 }
+					}
+					add = chancellor_task_chancellor_2_value	
+				}
+				# Add bonus from trait chancellor_1
+				else = {
+					add = chancellor_task_chancellor_1_value
+				}
+			}
+		}
+	}
+}
+
+chancellor_bestow_royal_favor_opinion_gain_chancellor_bonus = {
+	if = {
+		limit = { has_trait = lifestyle_chancellor }
+		add = chancellor_bestow_royal_favor_opinion_increase_per_success_base
+		
+		multiply = {
+			# Add bonus from trait chancellor_3
+			if = {
+				limit = {
+					has_trait_xp = { trait = lifestyle_chancellor value >= 100 }
+				}
+				add = chancellor_task_chancellor_3_value
+			}
+			# Add bonus from trait chancellor_2
+			else_if = {
+				limit = {
+					has_trait_xp = { trait = lifestyle_chancellor value >= 50 }
+				}
+				add = chancellor_task_chancellor_2_value
+			}
+			# Add bonus from trait chancellor_1
+			else = {
+				add = chancellor_task_chancellor_1_value
+			}
+		}
+		round = yes
+	}
+}

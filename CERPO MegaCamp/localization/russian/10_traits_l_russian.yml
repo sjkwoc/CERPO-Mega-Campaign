@@ -1,0 +1,92 @@
+﻿l_russian:
+
+trait_chancellor_1:0 "Начинающий канцлер"
+trait_chancellor_1_desc:0 "Этот персонаж владеет тонкостями дипломатии."
+trait_chancellor_1_character_desc:0 "Этот персонаж владеет тонкостями дипломатии."
+trait_chancellor_2:0 "Канцлер"
+trait_chancellor_2_desc:0 "Этот персонаж — завсегдатай многих королевских дворов."
+trait_chancellor_2_character_desc:0 "Этот персонаж — завсегдатай многих королевских дворов."
+trait_chancellor_3:0 "Известный канцлер"
+trait_chancellor_3_desc:0 "Этот персонаж известен всюду, он общался с величайшими правителями."
+trait_chancellor_3_character_desc:0 "Этот персонаж известен всюду, он общался с величайшими правителями."
+
+
+trait_marshal_1:0 "Начинающий маршал"
+trait_marshal_1_desc:0 "Этот персонаж обучает военному искусству и следит за безопасностью державы."
+trait_marshal_1_character_desc:0 "Этот персонаж обучает военному искусству и следит за безопасностью державы."
+trait_marshal_2:0 "Маршал"
+trait_marshal_2_desc:0 "Этот персонаж — ветеран, он обучил многих воителей и командиров."
+trait_marshal_2_character_desc:0 "Этот персонаж — ветеран, он обучил многих воителей и командиров."
+trait_marshal_3:0 "Известный маршал"
+trait_marshal_3_desc:0 "Этого героя боятся и уважают, он — легендарный тактик, вдохновляющий новые поколения."
+trait_marshal_3_character_desc:0 "Этого героя боятся и уважают, он — легендарный тактик, вдохновляющий новые поколения."
+
+
+trait_steward_1:0 "Начинающий управляющий"
+trait_steward_1_desc:0 "Этот персонаж заведует казной и управляет державными землями."
+trait_steward_1_character_desc:0 "Этот персонаж заведует казной и управляет державными землями."
+trait_steward_2:0 "Управляющий"
+trait_steward_2_desc:0 "Этот персонаж — опытный администратор, в искусстве управления для него нет секретов."
+trait_steward_2_character_desc:0 "Этот персонаж — опытный администратор, в искусстве управления для него нет секретов."
+trait_steward_3:0 "Известный управляющий"
+trait_steward_3_desc:0 "Этот персонаж мастерски управляет землями державы, он внес большой вклад в развитие торговли и культуры."
+trait_steward_3_character_desc:0 "Этот персонаж мастерски управляет землями державы, он внес большой вклад в развитие торговли и культуры."
+
+
+trait_chaplain_1:0 "Начинающий капеллан"
+trait_chaplain_1_desc:0 "Этот персонаж — плодотворный миссионер и символ своей веры."
+trait_chaplain_1_character_desc:0 "Этот персонаж — плодотворный миссионер и символ своей веры."
+trait_chaplain_2:0 "Капеллан"
+trait_chaplain_2_desc:0 "Этот персонаж может сплотить народ вокруг веры в самые трудные времена."
+trait_chaplain_2_character_desc:0 "Этот персонаж может сплотить народ вокруг веры в самые трудные времена."
+trait_chaplain_3:0 "Известный капеллан"
+trait_chaplain_3_desc:0 "Этот персонаж известен как один из величайших богословов нашего мира."
+trait_chaplain_3_character_desc:0 "Этот персонаж известен как один из величайших богословов нашего мира."
+
+
+trait_spymaster_1:0 "Начинающий интриган"
+trait_spymaster_1_desc:0 "Этот персонаж владеет искусством шпионажа, ему известно множество слухов."
+trait_spymaster_1_character_desc:0 "Этот персонаж владеет искусством шпионажа, ему известно множество слухов."
+trait_spymaster_2:0 "Интриган"
+trait_spymaster_2_desc:0 "Этого персонажа боятся, он умеет плести и раскрывать самые разные заговоры."
+trait_spymaster_2_character_desc:0 "Этого персонажа боятся, он умеет плести и раскрывать самые разные заговоры."
+trait_spymaster_3:0 "Известный интриган"
+trait_spymaster_3_desc:0 "Этот персонаж сплел шпионскую сеть по всей стране и за ее пределами, ничто не ускользает от него."
+trait_spymaster_3_character_desc:0 "Этот персонаж сплел шпионскую сеть по всей стране и за ее пределами, ничто не ускользает от него."
+
+trait_lifestyle_chancellor:0 "Канцлер"
+trait_track_lifestyle_chancellor:0 "Канцлер"
+trait_track_lifestyle_chancellor_desc:0 "Путешествие по дворам различных королевств воспитывает характер и искусство ведения переговоров."
+trait_lifestyle_marshal:0 "Маршал"
+trait_track_lifestyle_marshal:0 "Маршал"
+trait_track_lifestyle_marshal_desc:0 "Военное искусство — это не только меч в руке, это еще и умение приспосабливаться и находить наилучшую стратегию для победы!"
+trait_lifestyle_steward:0 "Управляющий"
+trait_track_lifestyle_steward:0 "Управляющий"
+trait_track_lifestyle_steward_desc:0 "Сущность королевства определяется его финансовым управлением. Деньги — это оружие войны, богатый народ — это верный народ."
+trait_lifestyle_chaplain:0 "Капеллан"
+trait_track_lifestyle_chaplain:0 "Капеллан"
+trait_track_lifestyle_chaplain_desc:0 "Распространение веры — это не просто искусство, это призвание. Бог присутствует в каждом, да дарует Он свою милость."
+trait_lifestyle_spymaster:0 "Интриган"
+trait_track_lifestyle_spymaster:0 "Интриган"
+trait_track_lifestyle_spymaster_desc:0 "Собирать слухи и информацию несложно, но умение узнать нужную — это искусство. Вопрос в том, как ее использовать."
+
+IMPROVED_CHANCELLOR_1_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [chancellor|El]#!: #P +5%#!"
+IMPROVED_CHANCELLOR_2_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [chancellor|El]#!: #P +10%#!"
+IMPROVED_CHANCELLOR_3_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [chancellor|El]#!: #P +15%#!"
+
+IMPROVED_MARSHAL_1_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [marshal|El]#!: #P +5%#!"
+IMPROVED_MARSHAL_2_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [marshal|El]#!: #P +10%#!"
+IMPROVED_MARSHAL_3_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [marshal|El]#!: #P +15%#!"
+
+IMPROVED_STEWARD_1_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [steward|El]#!: #P +5%#!"
+IMPROVED_STEWARD_2_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [steward|El]#!: #P +10%#!"
+IMPROVED_STEWARD_3_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [steward|El]#!: #P +15%#!"
+
+IMPROVED_SPYMASTER_1_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [spymaster|El]#!: #P +5%#!"
+IMPROVED_SPYMASTER_2_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [spymaster|El]#!: #P +10%#!"
+IMPROVED_SPYMASTER_3_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [spymaster|El]#!: #P +15%#!"
+
+IMPROVED_CHAPLAIN_1_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [court_chaplain|El]:#!: #P +5%#!"
+IMPROVED_CHAPLAIN_2_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [court_chaplain|El]#!: #P +10%#!"
+IMPROVED_CHAPLAIN_3_EFFECT_DESC:1 "#help Базовый прогресс и влияние достоинства [Concept('councillor', 'советника')|El] на задание, которое выполняет [court_chaplain|El]#!: #P +15%#!"
+

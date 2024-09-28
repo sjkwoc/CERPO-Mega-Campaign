@@ -1,0 +1,387 @@
+﻿KM_is_loaded = { always = yes }
+
+KM_can_be_knight_trigger = {
+	OR = {
+		$ARMY_OWNER$ = {
+			is_ai = yes
+		}
+		is_acclaimed = yes
+		has_variable = kmc_manually_allowed
+		NOR = {
+		
+			# Dynasty
+			
+			AND = {
+				house = $ARMY_OWNER$.house
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_house_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_house_cannot_be_knight }
+				}
+			}
+			AND = {
+				dynasty = $ARMY_OWNER$.dynasty
+				NOT = { house = $ARMY_OWNER$.house }
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_dynasty_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_dynasty_cannot_be_knight }
+				}
+			}
+			
+			# Realm
+			
+			AND = {
+				is_lowborn = no
+				NOT = { dynasty = $ARMY_OWNER$.dynasty }
+				NOT = { house = $ARMY_OWNER$.house }
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_highborn_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_highborn_cannot_be_knight }
+				}
+			}
+			AND = {
+				is_lowborn = yes
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_lowborn_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_lowborn_cannot_be_knight }
+				}
+			}
+			
+			# Vassals
+			
+			AND = {
+				#is_ruler = yes
+				is_landed = yes
+				highest_held_title_tier > tier_barony
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_landed_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_landed_cannot_be_knight }
+				}
+			}
+			AND = {
+				is_landed = yes
+				highest_held_title_tier <= tier_barony
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_barons_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_barons_cannot_be_knight }
+				}
+			}
+			
+			# Court
+			
+			AND = {
+				is_landed = no
+				NOT = { has_any_court_position = yes }
+				NOT = { is_councillor_of = $ARMY_OWNER$ }
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_unlanded_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_unlanded_cannot_be_knight }
+				}
+			}
+			AND = {
+				has_any_court_position = yes
+				NOR = {
+					has_court_position = bodyguard_court_position
+					has_court_position = garuda_court_position
+				}
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_court_position_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_court_position_cannot_be_knight }
+				}
+			}
+			AND = {
+				is_councillor_of = $ARMY_OWNER$
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_councillors_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_councillors_cannot_be_knight }
+				}
+			}
+			
+			# Family
+			
+			AND = {
+				is_spouse_of = $ARMY_OWNER$
+				NOT = { is_player_heir_of = $ARMY_OWNER$ }
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_spouses_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_spouses_cannot_be_knight }
+				}
+			}		
+			
+			AND = {
+				trigger_if = {
+					limit = {
+						OR = {
+							exists = father
+							exists = mother
+						}
+					}
+					trigger_if = {
+						limit = {
+							father ?= {
+								OR = {
+									exists = father
+									exists = mother
+								}
+							}
+						}
+						OR = {
+							is_child_of = $ARMY_OWNER$
+							is_grandchild_of = $ARMY_OWNER$
+						}
+					}
+					trigger_else_if = {
+						limit = {
+							mother ?= {
+								OR = {
+									exists = father
+									exists = mother
+								}
+							}
+						}
+						OR = {
+							is_child_of = $ARMY_OWNER$
+							is_grandchild_of = $ARMY_OWNER$
+						}
+					}
+					trigger_else = { is_child_of = $ARMY_OWNER$ }
+				}
+				trigger_else = { always = no }
+
+				NOT = { is_player_heir_of = $ARMY_OWNER$ }
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_children_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_children_cannot_be_knight }
+				}
+			}
+			
+			AND = {
+				trigger_if = {
+					limit = {
+						any_spouse = {
+							OR = {
+								exists = father
+								exists = mother
+							}
+						}
+					}
+					trigger_if = {
+						limit = {
+							any_spouse = {
+								father ?= {
+									OR = {
+										exists = father
+										exists = mother
+									}
+								}
+							}
+						}
+						any_spouse = {
+							OR = {
+								is_child_of = $ARMY_OWNER$
+								is_grandchild_of = $ARMY_OWNER$
+							}
+						}
+					}
+					trigger_else_if = {
+						limit = {
+							any_spouse = {
+								mother ?= {
+									OR = {
+										exists = father
+										exists = mother
+									}
+								}
+							}
+						}
+						any_spouse = {
+							OR = {
+								is_child_of = $ARMY_OWNER$
+								is_grandchild_of = $ARMY_OWNER$
+							}
+						}
+					}
+					trigger_else = { any_spouse = { is_child_of = $ARMY_OWNER$ } }
+				}
+				trigger_else = { always = no }
+				
+				NOT = { is_player_heir_of = $ARMY_OWNER$ }
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_child_spouses_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_child_spouses_cannot_be_knight }
+				}
+			}
+				
+			AND = {
+				is_player_heir_of = $ARMY_OWNER$
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_player_heir_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_player_heir_cannot_be_knight }
+				}
+			}
+			AND = {
+				OR = {
+					has_relation_lover = $ARMY_OWNER$
+					has_relation_soulmate = $ARMY_OWNER$
+					has_secret_relation_lover = $ARMY_OWNER$
+					has_secret_relation_soulmate = $ARMY_OWNER$
+				}
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_lover_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_lover_cannot_be_knight }
+				}
+			}
+			
+			# Prowess
+			
+			AND = {
+				prowess < 5
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_terrible_fighter_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_terrible_fighter_cannot_be_knight }
+				}
+			}
+			AND = {
+				prowess >= 5
+				prowess <= 8
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_poor_fighter_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_poor_fighter_cannot_be_knight }
+				}
+			}
+			AND = {
+				prowess >= 9
+				prowess <= 12
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_average_fighter_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_average_fighter_cannot_be_knight }
+				}
+			}
+			AND = {
+				prowess >= 13
+				prowess <= 16
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_good_fighter_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_good_fighter_cannot_be_knight }
+				}
+			}
+			AND = {
+				prowess > 16
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_excellent_fighter_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_excellent_fighter_cannot_be_knight }
+				}
+			}
+			
+			# Traits
+			
+			AND = {
+				has_trait = wounded
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_wounded_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_wounded_cannot_be_knight }
+				}
+			}
+			AND = {
+				has_trait = pregnant
+				trigger_if = { limit = { NOT = { has_global_variable = kmc_mp_active } }
+					has_global_variable = kmc_pregnant_cannot_be_knight
+				}
+				trigger_else = {
+					$ARMY_OWNER$ = { has_character_flag = kmc_pregnant_cannot_be_knight }
+				}
+			}
+		}
+	}
+}
+
+can_be_knight_trigger = {
+	is_hostage = no
+	trigger_if = {
+		limit = {
+			$ARMY_OWNER$.culture = {
+				has_cultural_parameter = minimum_prowess_for_knights
+			}
+		}
+		prowess >= 12
+	}
+	can_be_warrior_trigger = { ARMY_OWNER = $ARMY_OWNER$ }
+	trigger_if = {
+		limit = {
+			OR = {
+				has_trait = devoted
+				is_clergy = yes
+			}
+		}
+		OR = {
+			faith = { has_doctrine_parameter = clergy_can_fight }
+			culture = { has_cultural_parameter = culture_clergy_can_fight }
+			AND = {
+				$ARMY_OWNER$.culture = {
+					has_cultural_parameter = high_prowess_ignores_knight_restrictions
+				}
+				prowess >= 10
+			}
+		}
+	}
+	OR = {
+		AND = {
+			$ARMY_OWNER$.culture = {
+				has_cultural_parameter = high_prowess_ignores_knight_restrictions
+			}
+			prowess >= 10
+		}
+		has_trait = order_member # Order Members will fight for their faith even if their faith says no
+		NOR = {
+			has_trait = blind
+			has_court_position = master_assassin_court_position #FP3 addition
+		}
+	}
+	#KMC Overwrite - Player can be knight
+	#is_ai = yes
+	OR = {
+		is_ai = yes
+		has_character_flag = kmc_player_can_be_knight
+	}
+	#KMC Conditions
+	KM_can_be_knight_trigger = { ARMY_OWNER = $ARMY_OWNER$ }
+}

@@ -1,0 +1,616 @@
+﻿template kmc_knight_manager_widget
+{
+	vbox = {
+		name = kmc_settings
+		layoutpolicy_horizontal = expanding
+		#margin_top = 5
+		margin_left = 5
+		
+		hbox = {
+			layoutpolicy_horizontal = expanding
+			spacing = 5
+			background = {
+				using = Background_Area_ExtraDark
+				alpha = 0.3
+				margin_top = 10
+				margin_bottom = 5
+			}
+		#	button_standard = {
+		#		size = { 450 35 }
+		#		visible = "[And(Not(GetVariableSystem.HasValue( 'kmc_show_knight_manager', 'false' )), Not(GetVariableSystem.HasValue( 'kmc_show_knight_manager', 'true' )))]"
+		#		onclick = "[GetVariableSystem.Set( 'kmc_show_knight_manager', 'true' )]"
+		#
+		#		text = "kmc"
+		#		using = Font_Size_Medium
+		#
+		#		tooltip = "kmc_usage_tt"
+		#	}
+		#	button_standard = {
+		#		size = { 450 35 }
+		#		visible = "[GetVariableSystem.HasValue( 'kmc_show_knight_manager', 'false' )]"
+		#		onclick = "[GetVariableSystem.Set( 'kmc_show_knight_manager', 'true' )]"
+		#
+		#		text = "kmc"
+		#		using = Font_Size_Medium
+		#
+		#		tooltip = "kmc_usage_tt"
+		#	}
+		#	button_standard = {
+		#		size = { 450 35 }
+		#		visible = "[GetVariableSystem.HasValue( 'kmc_show_knight_manager', 'true' )]"
+		#		onclick = "[GetVariableSystem.Set( 'kmc_show_knight_manager', 'false' )]"
+		#		down = "[GetVariableSystem.HasValue( 'kmc_show_knight_manager', 'true' )]"
+		#
+		#		text = "kmc"
+		#		using = Font_Size_Medium
+		#		default_format = "#high"
+		#
+		#		tooltip = "kmc_usage_tt"
+		#	}
+			button_standard = {
+				size = { 450 35 }
+				datacontext = "[GetScriptedGui('kmc_toggle_show_knight_manager')]"
+				onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+				down = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+
+				text = "kmc"
+				using = Font_Size_Medium
+				default_format = "#high"
+
+				tooltip = "kmc_usage_tt"
+			}
+			button_checkbox_label = {
+				#max_width = 175
+				#layoutpolicy_horizontal = expanding
+				datacontext = "[GetScriptedGui('kmc_toggle_mp_active')]"
+				onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+				onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+				tooltip = "kmc_toggle_mp_active_tt"
+
+				blockoverride "checkbox"
+				{
+					checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+				}
+
+				blockoverride "text"
+				{
+					text = "kmc_toggle_mp_active"
+				}
+			}
+			spacer = { size = { 0 5 } }
+		}
+		divider_light = {
+			layoutpolicy_horizontal = expanding
+		}
+		spacer = { size = { 0 5 } }
+		vbox = {
+			layoutpolicy_vertical = expanding
+			layoutpolicy_horizontal = expanding
+			spacing = 5
+		#	visible = "[GetVariableSystem.HasValue( 'kmc_show_knight_manager', 'true' )]"
+			visible = "[GetScriptedGui('kmc_toggle_show_knight_manager').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+			
+			background = {
+				using = Background_Area_ExtraDark
+				alpha = 0.5
+				margin = { 2 8 }
+			}
+			
+			hbox = {
+				layoutpolicy_vertical = expanding
+				layoutpolicy_horizontal = expanding
+				spacing = 5
+				
+				vbox = {
+					name = kmc1_first_column
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					
+					text_label_center = {
+						text = "kmc_dynasty"
+						default_format = "#low"
+					}
+					text_label_center = {
+						text = "kmc_realm"
+						default_format = "#low"
+					}
+					#spacer = { size = { 116 0 } }
+				}
+				
+				divider_light = {
+					layoutpolicy_vertical = expanding
+				}
+				
+				vbox = {
+					name = kmc1_second_column
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					margin_left = 40
+					
+					#spacer = { size = { 130 0 } }
+										
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_house_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_house_cannot_be_knight_tt"
+			
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+			
+							blockoverride "text"
+						{
+							text = "kmc_toggle_house_cannot_be_knight"
+						}
+					}
+					
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_highborn_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_highborn_cannot_be_knight_tt"
+		
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+		
+						blockoverride "text"
+						{
+							text = "kmc_toggle_highborn_cannot_be_knight"
+						}
+					}
+				}
+				
+				vbox = {
+					name = kmc1_third_column
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_dynasty_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_dynasty_cannot_be_knight_tt"
+			
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+			
+							blockoverride "text"
+						{
+							text = "kmc_toggle_dynasty_cannot_be_knight"
+						}
+					}
+					
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_lowborn_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_lowborn_cannot_be_knight_tt"
+		
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+		
+						blockoverride "text"
+						{
+							text = "kmc_toggle_lowborn_cannot_be_knight"
+						}
+					}
+				}
+			}
+			
+			divider_light = {
+				layoutpolicy_horizontal = expanding
+			}
+			
+			hbox = {
+				layoutpolicy_vertical = expanding
+				layoutpolicy_horizontal = expanding
+				spacing = 5
+				
+				vbox = {
+					name = kmc_first_column
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					
+					text_label_center = {
+						text = "kmc_family"
+						default_format = "#low"
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_spouses_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_spouses_cannot_be_knight_tt"
+
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+
+						blockoverride "text"
+						{
+							text = "kmc_toggle_spouses_cannot_be_knight"
+						}
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_children_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_children_cannot_be_knight_tt"
+
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+
+							blockoverride "text"
+						{
+							text = "kmc_toggle_children_cannot_be_knight"
+						}
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_child_spouses_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_child_spouses_cannot_be_knight_tt"
+
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+
+						blockoverride "text"
+						{
+							text = "kmc_toggle_child_spouses_cannot_be_knight"
+						}
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_player_heir_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_my_heir_cannot_be_knight_tt"
+
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+
+							blockoverride "text"
+						{
+							text = "kmc_toggle_my_heir_cannot_be_knight"
+						}
+					}
+					text_label_center = {
+						text = "kmc_relations"
+						default_format = "#low"
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_lover_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_my_lovers_cannot_be_knight_tt"
+			
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+			
+							blockoverride "text"
+						{
+							text = "kmc_toggle_my_lovers_cannot_be_knight"
+						}
+					}
+					expand = {}
+				}
+				divider_light = {
+					layoutpolicy_vertical = expanding
+				}
+				vbox = {
+					name = kmc_second_column
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					
+					text_label_center = {
+						text = "kmc_liege"
+						default_format = "#low"
+						visible = "[GetScriptedGui('kmc_toggle_player_can_be_knight_is_shown').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_player_can_be_knight')]"
+						visible = "[GetScriptedGui('kmc_toggle_player_can_be_knight_is_shown').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_player_can_be_knight_tt"
+
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+
+							blockoverride "text"
+						{
+							text = "kmc_toggle_player_can_be_knight"
+						}
+					}
+					text_label_center = {
+						text = "kmc_vassals"
+						default_format = "#low"
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_landed_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_landed_cannot_be_knight_tt"
+		
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+		
+						blockoverride "text"
+						{
+							text = "kmc_toggle_landed_cannot_be_knight"
+						}
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_barons_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_barons_cannot_be_knight_tt"
+		
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+		
+						blockoverride "text"
+						{
+							text = "kmc_toggle_barons_cannot_be_knight"
+						}
+					}
+					
+					text_label_center = {
+						text = "kmc_court"
+						default_format = "#low"
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_unlanded_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_unlanded_cannot_be_knight_tt"
+		
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+		
+						blockoverride "text"
+						{
+							text = "kmc_toggle_unlanded_cannot_be_knight"
+						}
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_court_position_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_court_positions_cannot_be_knight_tt"
+
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+
+						blockoverride "text"
+						{
+							text = "kmc_toggle_court_positions_cannot_be_knight"
+						}
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_councillors_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_councillors_cannot_be_knight_tt"
+
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+
+							blockoverride "text"
+						{
+							text = "kmc_toggle_councillors_cannot_be_knight"
+						}
+					}
+					expand = {}
+				}
+				divider_light = {
+					layoutpolicy_vertical = expanding
+				}
+				vbox = {
+					name = kmc_third_column
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					
+					text_label_center = {
+						text = "kmc_prowess"
+						default_format = "#low"
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_terrible_fighters_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_terrible_fighters_cannot_be_knight_tt"
+
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+
+						blockoverride "text"
+						{
+							text = "kmc_toggle_terrible_fighters_cannot_be_knight"
+						}
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_poor_fighters_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_poor_fighters_cannot_be_knight_tt"
+
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+
+						blockoverride "text"
+						{
+							text = "kmc_toggle_poor_fighters_cannot_be_knight"
+						}
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_average_fighters_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_average_fighters_cannot_be_knight_tt"
+
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+
+						blockoverride "text"
+						{
+							text = "kmc_toggle_average_fighters_cannot_be_knight"
+						}
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_good_fighters_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_good_fighters_cannot_be_knight_tt"
+
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+
+						blockoverride "text"
+						{
+							text = "kmc_toggle_good_fighters_cannot_be_knight"
+						}
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_excellent_fighters_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_excellent_fighters_cannot_be_knight_tt"
+
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+
+						blockoverride "text"
+						{
+							text = "kmc_toggle_excellent_fighters_cannot_be_knight"
+						}
+					}
+					text_label_center = {
+						text = "kmc_traits"
+						default_format = "#low"
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_wounded_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_wounded_cannot_be_knight_tt"
+		
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+		
+						blockoverride "text"
+						{
+							text = "kmc_toggle_wounded_cannot_be_knight"
+						}
+					}
+					button_checkbox_label = {
+						max_width = 175
+						layoutpolicy_horizontal = expanding
+						datacontext = "[GetScriptedGui('kmc_toggle_pregnant_cannot_be_knight')]"
+						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+						tooltip = "kmc_toggle_pregnant_cannot_be_knight_tt"
+		
+						blockoverride "checkbox"
+						{
+							checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End)]"
+						}
+		
+						blockoverride "text"
+						{
+							text = "kmc_toggle_pregnant_cannot_be_knight"
+						}
+					}
+					expand = {}
+				}
+			}
+		}
+		spacer = { size = { 0 5 } }
+		divider_light = {
+			visible = "[GetVariableSystem.HasValue( 'kmc_show_knight_manager', 'true' )]"
+			layoutpolicy_horizontal = expanding
+		}
+	}
+}
+

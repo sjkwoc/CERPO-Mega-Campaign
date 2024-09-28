@@ -1,0 +1,21 @@
+﻿template kmc_knight_manager_button
+{
+	button_checkbox_label = {
+		layoutpolicy_horizontal = expanding
+		datacontext = "[GetScriptedGui('kmc_toggle_manually_allowed')]"
+		onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( Character.MakeScope ).End)]"
+		onclick = "[MilitaryView.SetKnightDefault( GetPlayer.Self )]"
+		tooltip = "kmc_toggle_exclude_label_tt"
+
+		blockoverride "checkbox"
+		{
+			checked = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End)]"
+		}
+
+			blockoverride "text"
+		{
+			text = "kmc_toggle_exclude_label"
+		}
+	}
+}
+

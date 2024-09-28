@@ -1,0 +1,92 @@
+﻿l_korean:
+
+trait_chancellor_1:0 "풋내기 재상"
+trait_chancellor_1_desc:0 "해당 인물은 외교의 복잡성을 숙달했습니다."
+trait_chancellor_1_character_desc:0 "해당 인물은 외교의 복잡성을 숙달했습니다."
+trait_chancellor_2:0 "재상"
+trait_chancellor_2_desc:0 "해당 인물은 많은 왕국의 궁정을 제집처럼 드나듭니다."
+trait_chancellor_2_character_desc:0 "해당 인물은 많은 왕국의 궁정을 제집처럼 드나듭니다."
+trait_chancellor_3:0 "저명한 재상"
+trait_chancellor_3_desc:0 "해당 인물은 모두에게 알려져 있으며, 위대한 지도자들과 어깨를 나란히 했습니다."
+trait_chancellor_3_character_desc:0 "해당 인물은 모두에게 알려져 있으며, 위대한 지도자들과 어깨를 나란히 했습니다."
+
+
+trait_marshal_1:0 "풋내기 무관장"
+trait_marshal_1_desc:0 "해당 인물은 전쟁의 기술을 가르치고 왕국의 안전을 책임집니다."
+trait_marshal_1_character_desc:0 "해당 인물은 전쟁의 기술을 가르치고 왕국의 안전을 책임집니다."
+trait_marshal_2:0 "무관장"
+trait_marshal_2_desc:0 "해당 인물은 베테랑이며, 수많은 영웅들과 장군들을 훈련시켰습니다."
+trait_marshal_2_character_desc:0 "해당 인물은 베테랑이며, 수많은 영웅들과 장군들을 훈련시켰습니다."
+trait_marshal_3:0 "저명한 무관장"
+trait_marshal_3_desc:0 "해당 인물은 두려움과 존경을 동시에 받으며, 다음 세대에게 영감을 주는 전설적인 전략가입니다."
+trait_marshal_3_character_desc:0 "해당 인물은 두려움과 존경을 동시에 받으며, 다음 세대에게 영감을 주는 전설적인 전략가입니다."
+
+
+trait_steward_1:0 "풋내기 집사장"
+trait_steward_1_desc:0 "해당 인물은 지역 경영과 공공 회계에 능숙합니다."
+trait_steward_1_character_desc:0 "해당 인물은 지역 경영과 공공 회계에 능숙합니다."
+trait_steward_2:0 "집사장"
+trait_steward_2_desc:0 "해당 인물은 유능한 관리자로서, 왕국의 경영에 대해서는 모르는 것이 없습니다."
+trait_steward_2_character_desc:0 "해당 인물은 유능한 관리자로서, 왕국의 경영에 대해서는 모르는 것이 없습니다."
+trait_steward_3:0 "저명한 집사장"
+trait_steward_3_desc:0 "해당 인물은 명인의 솜씨로 영토를 관리하며, 무역과 문화 발전에 크게 기여했습니다."
+trait_steward_3_character_desc:0 "해당 인물은 명인의 솜씨로 영토를 관리하며, 무역과 문화 발전에 크게 기여했습니다."
+
+
+trait_chaplain_1:0 "풋내기 사제"
+trait_chaplain_1_desc:0 "해당 인물은 유능한 선교사이며 신앙의 상징입니다."
+trait_chaplain_1_character_desc:0 "해당 인물은 유능한 선교사이며 신앙의 상징입니다."
+trait_chaplain_2:0 "사제"
+trait_chaplain_2_desc:0 "해당 인물은 가장 어려운 순간에도 신앙을 중심으로 사람들을 모으는 방법을 알고 있습니다."
+trait_chaplain_2_character_desc:0 "해당 인물은 가장 어려운 순간에도 신앙을 중심으로 사람들을 모으는 방법을 알고 있습니다."
+trait_chaplain_3:0 "저명한 사제"
+trait_chaplain_3_desc:0 "해당 인물은 세상에서 가장 위대한 학자 중 한 명으로 알려져 있습니다."
+trait_chaplain_3_character_desc:0 "해당 인물은 세상에서 가장 위대한 학자 중 한 명으로 알려져 있습니다."
+
+
+trait_spymaster_1:0 "풋내기 첩보장"
+trait_spymaster_1_desc:0 "해당 인물은 첩보의 기술을 숙달했습니다. 그는 대부분의 소문을 알고 있습니다."
+trait_spymaster_1_character_desc:0 "해당 인물은 첩보의 기술을 숙달했습니다. 그는 대부분의 소문을 알고 있습니다."
+trait_spymaster_2:0 "첩보장"
+trait_spymaster_2_desc:0 "해당 인물은 두려움의 대상이며, 많은 음모를 만들고 또 없애는 방법을 알고 있습니다."
+trait_spymaster_2_character_desc:0 "해당 인물은 두려움의 대상이며, 많은 음모를 만들고 또 없애는 방법을 알고 있습니다."
+trait_spymaster_3:0 "저명한 첩보장"
+trait_spymaster_3_desc:0 "해당 인물은 전국을 가로지르는 첩보망을 구축했으며, 무엇도 그에게서 벗어날 수 없습니다."
+trait_spymaster_3_character_desc:0 "해당 인물은 전국을 가로지르는 첩보망을 구축했으며, 무엇도 그에게서 벗어날 수 없습니다."
+
+trait_lifestyle_chancellor:0 "재상"
+trait_track_lifestyle_chancellor:0 "재상"
+trait_track_lifestyle_chancellor_desc:0 "다른 왕국의 궁정을 방문하는 것은 협상의 성격과 기술을 모두 연마합니다."
+trait_lifestyle_marshal:0 "무관장"
+trait_track_lifestyle_marshal:0 "무관장"
+trait_track_lifestyle_marshal_desc:0 "전사의 기술은 단지 검을 손에 들고 있는 것이 아니라, 적응하고 물리치기 위한 최선의 전략을 찾는 것입니다!"
+trait_lifestyle_steward:0 "집사장"
+trait_track_lifestyle_steward:0 "집사장"
+trait_track_lifestyle_steward_desc:0 "왕국의 토대는 탄탄한 재정 관리 위에 세워집니다. 돈은 전쟁의 원동력이며, 부유한 국민은 왕국에 충실합니다."
+trait_lifestyle_chaplain:0 "사제"
+trait_track_lifestyle_chaplain:0 "사제"
+trait_track_lifestyle_chaplain_desc:0 "신앙을 전파하는 것은 능력이 아닌 사명입니다. 신은 모두에게 자비를 베풀 것입니다."
+trait_lifestyle_spymaster:0 "첩보장"
+trait_track_lifestyle_spymaster:0 "첩보장"
+trait_track_lifestyle_spymaster_desc:0 "소문과 정보를 수집하는 것은 쉬운 일이지만, 올바른 정보를 수집하는 것은 기술입니다. 그것을 어떻게 활용할지는 두고 봐야 합니다."
+
+IMPROVED_CHANCELLOR_1_EFFECT_DESC:1 "#[councillor|El]의 능력이 [chancellor|El] 임무 진행도에 미치는 영향#!: #P +5%#!"
+IMPROVED_CHANCELLOR_2_EFFECT_DESC:1 "#[councillor|El]의 능력이 [chancellor|El] 임무 진행도에 미치는 영향#!: #P +10%#!"
+IMPROVED_CHANCELLOR_3_EFFECT_DESC:1 "#[councillor|El]의 능력이 [chancellor|El] 임무 진행도에 미치는 영향#!: #P +15%#!"
+
+IMPROVED_MARSHAL_1_EFFECT_DESC:1 "#[councillor|El]의 능력이 [marshal|El] 임무 진행도에 미치는 영향#!: #P +5%#!"
+IMPROVED_MARSHAL_2_EFFECT_DESC:1 "#[councillor|El]의 능력이 [marshal|El] 임무 진행도에 미치는 영향#!: #P +10%#!"
+IMPROVED_MARSHAL_3_EFFECT_DESC:1 "#[councillor|El]의 능력이 [marshal|El] 임무 진행도에 미치는 영향#!: #P +15%#!"
+
+IMPROVED_STEWARD_1_EFFECT_DESC:1 "#[councillor|El]의 능력이 [steward|El] 임무 진행도에 미치는 영향#!: #P +5%#!"
+IMPROVED_STEWARD_2_EFFECT_DESC:1 "#[councillor|El]의 능력이 [steward|El] 임무 진행도에 미치는 영향#!: #P +10%#!"
+IMPROVED_STEWARD_3_EFFECT_DESC:1 "#[councillor|El]의 능력이 [steward|El] 임무 진행도에 미치는 영향#!: #P +15%#!"
+
+IMPROVED_SPYMASTER_1_EFFECT_DESC:1 "#[councillor|El]의 능력이 [spymaster|El] 임무 진행도에 미치는 영향#!: #P +5%#!"
+IMPROVED_SPYMASTER_2_EFFECT_DESC:1 "#[councillor|El]의 능력이 [spymaster|El] 임무 진행도에 미치는 영향#!: #P +10%#!"
+IMPROVED_SPYMASTER_3_EFFECT_DESC:1 "#[councillor|El]의 능력이 [spymaster|El] 임무 진행도에 미치는 영향#!: #P +15%#!"
+
+IMPROVED_CHAPLAIN_1_EFFECT_DESC:1 "#[councillor|El]의 능력이 [court_chaplain|El] 임무 진행도에 미치는 영향#!: #P +5%#!"
+IMPROVED_CHAPLAIN_2_EFFECT_DESC:1 "#[councillor|El]의 능력이 [court_chaplain|El] 임무 진행도에 미치는 영향#!: #P +10%#!"
+IMPROVED_CHAPLAIN_3_EFFECT_DESC:1 "#[councillor|El]의 능력이 [court_chaplain|El] 임무 진행도에 미치는 영향#!: #P +15%#!"
+

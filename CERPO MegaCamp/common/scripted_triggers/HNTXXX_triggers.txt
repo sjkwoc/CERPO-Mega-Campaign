@@ -1,0 +1,13 @@
+﻿hntxxx_valid_hre_candidate_trigger = {
+	is_landed = yes
+	exists = title:e_hre.holder
+	not = { this = title:e_hre.holder }
+	title:e_hre = { has_title_law = princely_elective_succession_law }
+	or = {
+		and = {
+			exists = capital_province.empire
+			capital_province.empire = title:e_hre
+		}
+		top_liege = title:e_hre.holder
+	}
+}

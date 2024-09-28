@@ -1,0 +1,92 @@
+﻿l_simp_chinese:
+
+trait_chancellor_1:0 "熟练的掌玺大臣"
+trait_chancellor_1_desc:0 "这个角色作为掌玺大臣已经轻车熟路"
+trait_chancellor_1_character_desc:0 "这个角色在当掌玺大臣上已经轻车熟路"
+trait_chancellor_2:0 "卓越的掌玺大臣"
+trait_chancellor_2_desc:0 "这个角色拜访了许多王国宫廷"
+trait_chancellor_2_character_desc:0 "这个角色是许多王国宫廷的常客"
+trait_chancellor_3:0 "名臣"
+trait_chancellor_3_desc:0 "这个角色靠外交为领袖获得了无数声望"
+trait_chancellor_3_character_desc:0 "这个角色靠外交为领袖获得了无数声望"
+
+
+trait_marshal_1:0 "熟练的军事统帅"
+trait_marshal_1_desc:0 "这个角色对军事有独特的见解,并保卫领土安全"
+trait_marshal_1_character_desc:0 "这个角色对军事有独特的见解,并保卫领土安全"
+trait_marshal_2:0 "有威望的军事统帅"
+trait_marshal_2_desc:0 "这个角色是个老兵,已经培养了许多勇士和将军"
+trait_marshal_2_character_desc:0 "这个角色是个老兵,已经培养了许多勇士和将军"
+trait_marshal_3:0 "青史留名的军事统帅"
+trait_marshal_3_desc:0 "这个角色相当受人尊敬,赢得了许多战役,十年难得一遇"
+trait_marshal_3_character_desc:0 "这个角色相当受人尊敬,赢得了许多战役,十年难得一遇"
+
+
+trait_steward_1:0 "熟练的财政总管"
+trait_steward_1_desc:0 "这个角色对于财政管理已经熟练"
+trait_steward_1_character_desc:0 "这个角色对于财政管理已经熟练"
+trait_steward_2:0 "出色的财政总管"
+trait_steward_2_desc:0 "这个角色是个称职的管理者，王国的管理不再对他保密。"
+trait_steward_2_character_desc:0 "这个角色是个称职的管理者，王国的管理不再对他保密。"
+trait_steward_3:0 "著名财政总管"
+trait_steward_3_desc:0 "这个角色以大师之手管理领土，他为贸易和文化的发展做出了巨大贡献"
+trait_steward_3_character_desc:0 "这个角色以大师之手管理领土，他为贸易和文化的发展做出了巨大贡献"
+
+
+trait_chaplain_1:0 "杰出牧师"
+trait_chaplain_1_desc:0 "这个角色是一位杰出的传教士,他对信仰很坚定"
+trait_chaplain_1_character_desc:0 "这个角色是一位杰出的传教士,他对信仰很坚定"
+trait_chaplain_2:0 "受人尊敬的牧师"
+trait_chaplain_2_desc:0 "这个角色积累了很多威望,在人们的信仰与生死面前,他已经经历许多"
+trait_chaplain_2_character_desc:0 "这个角色积累了很多威望,在人们的信仰与生死面前,他已经经历许多"
+trait_chaplain_3:0 "圣贤牧师"
+trait_chaplain_3_desc:0 "这个角色在他人口中与史书中被描写成一位伟大的学者"
+trait_chaplain_3_character_desc:0 "这个角色在他人口中与史书中被描写成一位伟大的学者"
+
+
+trait_spymaster_1:0 "受领主信任的间谍首脑"
+trait_spymaster_1_desc:0 "这个角色掌握了情报的艺术。他了解大部分谣言舆论。"
+trait_spymaster_1_character_desc:0 "这个角色掌握了情报的艺术。他知道大部分谣言舆论。"
+trait_spymaster_2:0 "大师间谍首脑"
+trait_spymaster_2_desc:0 "这个角色熟练的掌握了编造,销毁,利用他人的秘密,令人畏惧"
+trait_spymaster_2_character_desc:0 "这个角色熟练的掌握了编造,销毁,利用他人的秘密,令人畏惧"
+trait_spymaster_3:0 "神出鬼没的间谍首脑"
+trait_spymaster_3_desc:0 "这个角色在全国布满眼线,无论领主或是廷臣都要注意他的脸色"
+trait_spymaster_3_character_desc:0 "这个角色在全国布满眼线,无论领主或是廷臣都要注意他的脸色"
+
+trait_lifestyle_chancellor:0 "掌玺大臣"
+trait_track_lifestyle_chancellor:0 "掌玺大臣"
+trait_track_lifestyle_chancellor_desc:0 "在不同王国的宫廷中旅行，既培养了性格，也培养了谈判的艺术。"
+trait_lifestyle_marshal:0 "军事统帅"
+trait_track_lifestyle_marshal:0 "军事统帅"
+trait_track_lifestyle_marshal_desc:0 "战争的艺术不仅是手中的剑，它也是适应和找到最好的策略来赢得胜利！"
+trait_lifestyle_steward:0 "财政总管"
+trait_track_lifestyle_steward:0 "财政总管"
+trait_track_lifestyle_steward_desc:0 "一个王国的本质是由其财务管理决定的。金钱是战争的筋骨，一个富有的民族是一个忠诚的民族。"
+trait_lifestyle_chaplain:0 "牧师"
+trait_track_lifestyle_chaplain:0 "牧师"
+trait_track_lifestyle_chaplain_desc:0 "传播信仰不仅仅是一种艺术，更是一种天职。上帝存在于每个人身上，愿他赐予怜悯。"
+trait_lifestyle_spymaster:0 "间谍首脑"
+trait_track_lifestyle_spymaster:0 "间谍首脑"
+trait_track_lifestyle_spymaster_desc:0 "收集谣言和信息很容易，知道如何收集正确的信息是一种艺术。问题是如何利用它。"
+
+
+IMPROVED_CHANCELLOR_1_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [chancellor|El]#!: #P +5%#!"
+IMPROVED_CHANCELLOR_2_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [chancellor|El]#!: #P +10%#!"
+IMPROVED_CHANCELLOR_3_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [chancellor|El]#!: #P +15%#!"
+
+IMPROVED_MARSHAL_1_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [marshal|El]#!: #P +5%#!"
+IMPROVED_MARSHAL_2_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [marshal|El]#!: #P +10%#!"
+IMPROVED_MARSHAL_3_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [marshal|El]#!: #P +15%#!"
+
+IMPROVED_STEWARD_1_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [steward|El]#!: #P +5%#!"
+IMPROVED_STEWARD_2_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [steward|El]#!: #P +10%#!"
+IMPROVED_STEWARD_3_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [steward|El]#!: #P +15%#!"
+
+IMPROVED_SPYMASTER_1_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [spymaster|El]#!: #P +5%#!"
+IMPROVED_SPYMASTER_2_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [spymaster|El]#!: #P +10%#!"
+IMPROVED_SPYMASTER_3_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [spymaster|El]#!: #P +15%#!"
+
+IMPROVED_CHAPLAIN_1_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [court_chaplain|El]#!: #P +5%#!"
+IMPROVED_CHAPLAIN_2_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [court_chaplain|El]#!: #P +10%#!"
+IMPROVED_CHAPLAIN_3_EFFECT_DESC:1 "#help 的生活重心技能和对 [councillor|El] 工作任务的影响 [court_chaplain|El]#!: #P +15%#!"

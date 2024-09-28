@@ -1,0 +1,7 @@
+﻿l_english:
+hntxxx_hre_election_exclusion_interaction: "HRE election - excluded"
+hntxxx_hre_election_exclusion_interaction_desc: "Exclude this character from the HRE election."
+hntxxx_hre_election_inclusion_interaction: "HRE election - included"
+hntxxx_hre_election_inclusion_interaction_desc: "Include this character in the HRE election."
+
+hntxxx_tooltip_non_player_elective: "Character excluded from election!"

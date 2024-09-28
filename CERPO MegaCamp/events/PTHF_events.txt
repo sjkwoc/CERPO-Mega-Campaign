@@ -1,0 +1,172 @@
+﻿namespace = PTHF_events
+
+# Switch to HoF religious title
+PTHF_events.1001 = {
+    type = character_event
+
+    hidden = yes
+
+    immediate = {
+        debug_log = "PTHF_events.1001 (switching to HoF religious title)"
+
+        faith = {
+            religious_head_title = {
+                save_scope_as = old_hof_title
+            }
+        }
+
+        # If d_sectihof_prefer_religious already has a holder,
+        # it means another character has already switched to religious title
+        # for their faith or was granted the switched title.
+        # Since in the current implementation there is only one marker title,
+        # we have to clear it up and revert its current holder to their old HoF title.
+        title:d_sectihof_prefer_religious = {
+            if = {
+                limit = { exists = holder }
+
+                holder = {
+                    # Switch current holder back to their old HoF title
+                    # thereby releasing d_sectihof_prefer_religious for our own use.
+                    trigger_event = PTHF_events.1002
+                }
+            }
+        }
+
+        assert_if = {
+            limit = { NOT = { scope:old_hof_title = { holder = root } } }
+
+            text = "must be the current holder of HoF title"
+        }
+
+        assert_if = {
+            limit = { has_title = title:d_sectihof_prefer_religious }
+
+            text = "must NOT already be the current holder of d_sectihof_prefer_religious"
+        }
+
+        set_global_variable = {
+            name = sectihof_old_hof_title
+            value = scope:old_hof_title
+        }
+
+        title:d_sectihof_temporary_title_history_storage = {
+            copy_title_history = scope:old_hof_title
+        }
+
+        create_title_and_vassal_change = {
+            type = created
+            save_scope_as = change
+            add_claim_on_loss = no
+        }
+
+        title:d_sectihof_prefer_religious = {
+            set_destroy_if_invalid_heir = yes
+            set_no_automatic_claims = yes
+            set_definitive_form = yes
+            set_always_follows_primary_heir = yes
+
+            change_title_holder = {
+                holder = root
+                change = scope:change
+            }
+
+            set_title_name = sectihof_old_hof_title
+
+            set_coa = scope:old_hof_title
+            copy_title_history = scope:old_hof_title
+        }
+
+        resolve_title_and_vassal_change = scope:change
+
+        title:d_sectihof_prefer_religious = {
+            copy_title_history = title:d_sectihof_temporary_title_history_storage
+        }
+
+        faith = {
+            set_religious_head_title = title:d_sectihof_prefer_religious
+        }
+
+        # TODO: Wrap in an if to suppress error logs
+        add_realm_law_skip_effects = same_faith_succession_law
+
+        title:d_sectihof_prefer_religious = {
+            add_title_law = temporal_head_of_faith_succession_law
+        }
+
+        destroy_title = scope:old_hof_title
+    }
+}
+
+# Switch to primary secular title
+PTHF_events.1002 = {
+    type = character_event
+
+    hidden = yes
+
+    immediate = {
+        add_internal_flag = special
+
+        debug_log = "PTHF_events.1002 (switching to primary secular title)"
+
+        assert_if = {
+            limit = { NOT = { exists = global_var:sectihof_old_hof_title } }
+
+            text = "global_var:sectihof_old_hof_title must be set at this point"
+        }
+
+        assert_if = {
+            limit = { NOT = { has_title = title:d_sectihof_prefer_religious } }
+
+            text = "must be the holder of d_sectihof_prefer_religious"
+        }
+
+        title:d_sectihof_temporary_title_history_storage = {
+            copy_title_history = title:d_sectihof_prefer_religious
+        }
+
+        create_title_and_vassal_change = {
+            type = created
+            save_scope_as = change
+            add_claim_on_loss = no
+        }
+
+        global_var:sectihof_old_hof_title = {
+            set_destroy_if_invalid_heir = yes
+            set_no_automatic_claims = yes
+            set_definitive_form = yes
+            set_always_follows_primary_heir = yes
+
+            change_title_holder = {
+                holder = root
+                change = scope:change
+            }
+
+            #set_title_name = i_dont_know_what_to_put_here_actually # TODO
+
+            set_coa = title:d_sectihof_prefer_religious
+
+            copy_title_history = title:d_sectihof_prefer_religious
+        }
+
+        resolve_title_and_vassal_change = scope:change
+
+        global_var:sectihof_old_hof_title = {
+            copy_title_history = title:d_sectihof_temporary_title_history_storage
+        }
+
+        faith = {
+            set_religious_head_title = global_var:sectihof_old_hof_title
+        }
+
+        # TODO: Wrap in an if to suppress error logs
+        add_realm_law_skip_effects = same_faith_succession_law
+
+        global_var:sectihof_old_hof_title = {
+            add_title_law = temporal_head_of_faith_succession_law
+        }
+
+        destroy_title = title:d_sectihof_prefer_religious
+
+        remove_global_variable = sectihof_old_hof_title
+    }
+}

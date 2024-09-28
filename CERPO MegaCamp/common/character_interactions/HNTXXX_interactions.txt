@@ -1,0 +1,43 @@
+﻿hntxxx_hre_election_exclusion_interaction = {
+	category = interaction_category_diplomacy
+    desc = hntxxx_hre_election_exclusion_interaction_desc
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+		scope:recipient = {
+			hntxxx_valid_hre_candidate_trigger = yes
+			not = { has_character_modifier = hntxxx_exclude_from_hre_election_modifier }
+		}
+	}
+
+	on_send = {
+		scope:recipient = {
+			add_character_modifier = {
+				modifier = hntxxx_exclude_from_hre_election_modifier
+			}
+		}
+	}
+
+	ai_will_do = { base = 0 }
+}
+
+hntxxx_hre_election_inclusion_interaction = {
+	category = interaction_category_diplomacy
+    desc = hntxxx_hre_election_inclusion_interaction_desc
+
+	is_shown = {
+		scope:actor = { is_ai = no }
+		scope:recipient = {
+			hntxxx_valid_hre_candidate_trigger = yes
+			has_character_modifier = hntxxx_exclude_from_hre_election_modifier
+		}
+	}
+
+	on_send = {
+		scope:recipient = {
+			remove_character_modifier = hntxxx_exclude_from_hre_election_modifier
+		}
+	}
+
+	ai_will_do = { base = 0 }
+}

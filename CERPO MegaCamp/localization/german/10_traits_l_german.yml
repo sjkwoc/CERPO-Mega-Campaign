@@ -1,0 +1,93 @@
+﻿l_german:
+
+trait_chancellor_1:0 "Neuling unter den Kanzlern"
+trait_chancellor_1_desc:0 "Dieser Charakter beherrscht die Feinheiten der Diplomatie."
+trait_chancellor_1_character_desc:0 "Dieser Charakter beherrscht die Feinheiten der Diplomatie."
+trait_chancellor_2:0 "Kanzler"
+trait_chancellor_2_desc:0 "Dieser Charakter ist ein Stammgast an den Höfen vieler Königreiche."
+trait_chancellor_2_character_desc:0 "Dieser Charakter ist ein Stammgast an den Höfen vieler Königreiche."
+trait_chancellor_3:0 "Angesehener Kanzler"
+trait_chancellor_3_desc:0 "Dieser Charakter ist allen bekannt, er hat mit den größten Anführern zusammengearbeitet."
+trait_chancellor_3_character_desc:0 "Dieser Charakter ist allseits bekannt, er hat mit den größten Anführern zusammengearbeitet."
+
+
+trait_marshal_1:0 "Marschall-Neuling"
+trait_marshal_1_desc:0 "Dieser Charakter lehrt die Kunst des Krieges und beaufsichtigt die Sicherheit des Königreichs."
+trait_marshal_1_character_desc:0 "Dieser Charakter lehrt die Kunst des Krieges und überwacht die Sicherheit des Königreichs."
+trait_marshal_2:0 "Marschall"
+trait_marshal_2_desc:0 "Dieser Charakter ist ein Veteran, er hat viele Champions und Generäle ausgebildet."
+trait_marshal_2_character_desc:0 "Dieser Charakter ist ein Veteran, er hat viele Champions und Generäle ausgebildet."
+trait_marshal_3:0 "Angesehener Marschall"
+trait_marshal_3_desc:0 "Dieser Charakter ist gefürchtet und respektiert, er ist ein legendärer Taktiker, er inspiriert neue Generationen."
+trait_marshal_3_character_desc:0 "Dieser Charakter ist gefürchtet und geachtet, er ist ein legendärer Taktiker, er inspiriert neue Generationen."
+
+
+trait_steward_1:0 " Neuling unter den Verwaltern"
+trait_steward_1_desc:0 "Dieser Charakter ist mit der öffentlichen Buchführung und der Verwaltung von Territorien vertraut."
+trait_steward_1_character_desc:0 "Dieser Charakter ist für öffentliche Konten und Territorialverwaltung zuständig."
+trait_steward_2:0 "Verwalter"
+trait_steward_2_desc:0 "Dieser Charakter ist ein kompetenter Verwalter, die Verwaltung des Königreichs birgt keine Geheimnisse mehr für ihn."
+trait_steward_2_character_desc:0 "Dieser Charakter ist ein kompetenter Verwalter, die Verwaltung des Königreichs birgt keine Geheimnisse mehr für ihn."
+trait_steward_3:0 "Angesehener Verwalter"
+trait_steward_3_desc:0 "Dieser Charakter verwaltet das Territorium mit meisterhafter Hand, er hat viel zur Entwicklung von Handel und Kultur beigetragen"
+trait_steward_3_character_desc:0 "Dieser Charakter verwaltet das Territorium mit meisterhafter Hand, er hat viel zur Entwicklung von Handel und Kultur beigetragen"
+
+
+trait_chaplain_1:0 "Neuling unter den Bischöfen"
+trait_chaplain_1_desc:0 "Dieser Charakter ist ein effektiver Missionar und eine Ikone des Glaubens."
+trait_chaplain_1_character_desc:0 "Dieser Charakter ist ein effektiver Missionar und eine Ikone des Glaubens."
+trait_chaplain_2:0 "Bischof"
+trait_chaplain_2_desc:0 "Dieser Charakter verstand es, die Menschen in den schwierigsten Momenten um den Glauben zu versammeln."
+trait_chaplain_2_character_desc:0 "Dieser Charakter verstand es, die Menschen in den schwierigsten Momenten um den Glauben zu versammeln."
+trait_chaplain_3:0 "Angesehener Bischof"
+trait_chaplain_3_desc:0 "Dieser Charakter ist dafür bekannt, einer der größten Gelehrten dieser Welt zu sein."
+trait_chaplain_3_character_desc:0 "Dieser Charakter ist dafür bekannt, einer der größten Gelehrten dieser Welt zu sein."
+
+
+trait_spymaster_1:0 " Neuling unter den Spitzeln"
+trait_spymaster_1_desc:0 "Dieser Charakter hat die Kunst der Spionage gemeistert. Er kennt die meisten Gerüchte."
+trait_spymaster_1_character_desc:0 "Dieser Charakter hat die Kunst der Spionage gemeistert. Er kennt die meisten Gerüchte."
+trait_spymaster_2:0 "Spitzel"
+trait_spymaster_2_desc:0 "Dieser Charakter ist gefürchtet, er wusste, wie man viele Komplotte schmiedet und wieder rückgängig macht."
+trait_spymaster_2_character_desc:0 "Dieser Charakter ist gefürchtet, er wusste, wie man viele Ränke schmiedet und wieder rückgängig macht."
+trait_spymaster_3:0 "Berühmter Spitzel"
+trait_spymaster_3_desc:0 "Dieser Charakter hat ein Netzwerk im ganzen Land und darüber hinaus gewoben, nichts entgeht ihm."
+trait_spymaster_3_character_desc:0 "Dieser Charakter hat ein Netzwerk im ganzen Land und darüber hinaus geknüpft, nichts entgeht ihm."
+
+
+trait_lifestyle_chancellor:0 "Ratskanzler"
+trait_track_lifestyle_chancellor:0 "Ratskanzler"
+trait_track_lifestyle_chancellor_desc:0 "Die Reise durch die Höfe der verschiedenen Königreiche schult sowohl den Charakter als auch die Verhandlungskunst."
+trait_lifestyle_marshal:0 "Ratsmarschall"
+trait_track_lifestyle_marshal:0 "Ratsmarschall"
+trait_track_lifestyle_marshal_desc:0 "Die Kunst des Krieges besteht nicht nur darin, das Schwert in der Hand zu halten, sondern auch, sich anzupassen und die beste Strategie zu finden, um zu gewinnen!"
+trait_lifestyle_steward:0 "Ratsverwalter"
+trait_track_lifestyle_steward:0 "Ratsverwalter"
+trait_track_lifestyle_steward_desc:0 "Das Wesen eines Königreichs wird durch seine Finanzverwaltung definiert. Geld ist das Bindeglied des Krieges, und ein Volk, das reich ist, ist ein treues Volk."
+trait_lifestyle_chaplain:0 "Ratskaplan"
+trait_track_lifestyle_chaplain:0 "Ratskaplan"
+trait_track_lifestyle_chaplain_desc:0 "Den Glauben zu verbreiten ist mehr als eine Kunst, es ist eine Berufung. Gott ist in jedem Menschen gegenwärtig, möge er seine Barmherzigkeit gewähren."
+trait_lifestyle_spymaster:0 "Ratsspitzel"
+trait_track_lifestyle_spymaster:0 "Ratsspitzel"
+trait_track_lifestyle_spymaster_desc:0 "Gerüchte und Informationen zu sammeln ist einfach, zu wissen, wie man die richtigen Informationen sammelt, ist eine Kunst. Die Frage ist, wie man sie ausnutzt."
+
+
+IMPROVED_CHANCELLOR_1_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [chancellor|EU] Tätigkeiten#!: #P +5%#!"
+IMPROVED_CHANCELLOR_2_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [chancellor|EU] Tätigkeiten#!: #P +10%#!"
+IMPROVED_CHANCELLOR_3_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [chancellor|EU] Tätigkeiten#!: #P +15%#!"
+
+IMPROVED_MARSHAL_1_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [marshal|EU] Tätigkeiten#!: #P +5%#!"
+IMPROVED_MARSHAL_2_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [marshal|EU] Tätigkeiten#!: #P +10%#!"
+IMPROVED_MARSHAL_3_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [marshal|EU] Tätigkeiten#!: #P +15%#!"
+
+IMPROVED_STEWARD_1_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [steward|EU] Tätigkeiten#!: #P +5%#!"
+IMPROVED_STEWARD_2_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [steward|EU] Tätigkeiten#!: #P +10%#!"
+IMPROVED_STEWARD_3_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [steward|EU] Tätigkeiten#!: #P +15%#!"
+
+IMPROVED_SPYMASTER_1_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [spymaster|EU] Tätigkeiten#!: #P +5%#!"
+IMPROVED_SPYMASTER_2_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [spymaster|EU] Tätigkeiten#!: #P +10%#!"
+IMPROVED_SPYMASTER_3_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [spymaster|EU] Tätigkeiten#!: #P +15%#!"
+
+IMPROVED_CHAPLAIN_1_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [court_chaplain|EU] Tätigkeiten#!: #P +5%#!"
+IMPROVED_CHAPLAIN_2_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [court_chaplain|EU] Tätigkeiten#!: #P +10%#!"
+IMPROVED_CHAPLAIN_3_EFFECT_DESC:1 "#help Basisfortschritt und Auswirkung von [councillor|EU] Fähigkeit auf [court_chaplain|EU] Tätigkeiten#!: #P +15%#!"

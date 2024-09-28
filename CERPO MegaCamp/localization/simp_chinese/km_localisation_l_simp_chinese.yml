@@ -1,0 +1,96 @@
+﻿l_simp_chinese:
+ 
+ # Header
+ kmc: "骑士经理"
+ kmc_usage_tt: "取消选中复选框以禁止某些角色组担任骑士。取消选中时，该组的所有角色将不再是骑士，也不会再出现在列表中。如果您想手动允许特定角色如果该组的成员担任骑士，请取消选中他的 KM 复选框，然后再禁止他的组担任骑士。"
+ 
+ kmc_toggle_mp_active: "MP"
+ kmc_toggle_mp_active_tt: "Switches to multiplayer mode: Settings are linked to the character and must be reset after death."
+ 
+ kmc_dynasty: "$game_concept_dynasty$"
+ kmc_family: "$game_concept_family$"
+ kmc_relations: "$game_concept_relations$"
+ kmc_realm: "$game_concept_realm$"
+ kmc_court: "$game_concept_court$"
+ kmc_vassals: "$game_concept_vassals$"
+ kmc_prowess: "$game_concept_prowess$"
+ kmc_traits: "$game_concept_traits$"
+ kmc_liege: "$game_concept_liege$"
+ 
+ # Dynasty
+ kmc_toggle_dynasty_cannot_be_knight: "$game_concept_dynasty$"
+ kmc_toggle_dynasty_cannot_be_knight_tt: "$game_concept_dynasty_desc$"
+ 
+ kmc_toggle_house_cannot_be_knight: "$game_concept_house$"
+ kmc_toggle_house_cannot_be_knight_tt: "$game_concept_house_desc$"
+ 
+ kmc_toggle_spouses_cannot_be_knight: "$game_concept_spouses$"
+ kmc_toggle_spouses_cannot_be_knight_tt: "$game_concept_spouse_desc$"
+ 
+ kmc_toggle_children_cannot_be_knight: "$game_concept_children$"
+ kmc_toggle_children_cannot_be_knight_tt: "If checked, my (grand)children can serve as knights."
+
+ kmc_toggle_child_spouses_cannot_be_knight: "$game_concept_children$ - $game_concept_spouses$"
+ kmc_toggle_child_spouses_cannot_be_knight_tt: "If checked, the spouses of my (grand)children can serve as knights."
+ 
+ kmc_toggle_my_heir_cannot_be_knight: "$game_concept_player_heir$"
+ kmc_toggle_my_heir_cannot_be_knight_tt: "$game_concept_player_heir_desc$"
+ 
+ # Relations
+ kmc_toggle_my_lovers_cannot_be_knight: "$game_concept_lovers$"
+ kmc_toggle_my_lovers_cannot_be_knight_tt: "$game_concept_lover_desc$"
+ 
+ # Realm
+ kmc_toggle_highborn_cannot_be_knight: "$game_concept_nobles$"
+ kmc_toggle_highborn_cannot_be_knight_tt: "$game_concept_noble_desc$"
+ 
+ kmc_toggle_lowborn_cannot_be_knight: "$game_concept_commoners$"
+ kmc_toggle_lowborn_cannot_be_knight_tt: "$game_concept_commoner_desc$"
+ 
+ # Court
+ kmc_toggle_councillors_cannot_be_knight: "$game_concept_councillors$"
+ kmc_toggle_councillors_cannot_be_knight_tt: "$game_concept_councillor_desc$"
+ 
+ kmc_toggle_court_positions_cannot_be_knight: "$game_concept_court_positions$"
+ kmc_toggle_court_positions_cannot_be_knight_tt: "$game_concept_court_position_desc$"
+ 
+ kmc_toggle_unlanded_cannot_be_knight: "$game_concept_courtiers$"
+ kmc_toggle_unlanded_cannot_be_knight_tt: "$game_concept_courtier_desc$"
+ 
+ # Vassals
+ kmc_toggle_landed_cannot_be_knight: "$game_concept_rulers$"
+ kmc_toggle_landed_cannot_be_knight_tt: "$game_concept_ruler_desc$"
+ 
+ kmc_toggle_barons_cannot_be_knight: "$game_concept_barons$"
+ kmc_toggle_barons_cannot_be_knight_tt: "$game_concept_barony_desc$"
+ 
+ # Prowess
+ kmc_toggle_terrible_fighters_cannot_be_knight: "$SKILL_TERRIBLE$"
+ kmc_toggle_terrible_fighters_cannot_be_knight_tt: "$game_concept_prowess_skill$ < 5[prowess_i]"
+ 
+ kmc_toggle_poor_fighters_cannot_be_knight: "$SKILL_POOR$"
+ kmc_toggle_poor_fighters_cannot_be_knight_tt: "$game_concept_prowess_skill$ 5 - 8[prowess_i]"
+ 
+ kmc_toggle_average_fighters_cannot_be_knight: "$SKILL_AVERAGE$"
+ kmc_toggle_average_fighters_cannot_be_knight_tt: "$game_concept_prowess_skill$ 9 - 12[prowess_i]"
+ 
+ kmc_toggle_good_fighters_cannot_be_knight: "$SKILL_GOOD$"
+ kmc_toggle_good_fighters_cannot_be_knight_tt: "$game_concept_prowess_skill$ 13 - 16[prowess_i]"
+ 
+ kmc_toggle_excellent_fighters_cannot_be_knight: "$SKILL_EXCELLENT$"
+ kmc_toggle_excellent_fighters_cannot_be_knight_tt: "$game_concept_prowess_skill$ > 16[prowess_i]"
+ 
+ # Traits
+ kmc_toggle_wounded_cannot_be_knight: "$trait_wounded_1$"
+ kmc_toggle_wounded_cannot_be_knight_tt: "If checked, wounded characters can serve as knights."
+ 
+ kmc_toggle_pregnant_cannot_be_knight: "$trait_pregnant$"
+ kmc_toggle_pregnant_cannot_be_knight_tt: "When activated, pregnant characters can serve as knights."
+ 
+ # Player can be Knight
+ kmc_toggle_player_can_be_knight: "$CV_TT_YOU$"
+ kmc_toggle_player_can_be_knight_tt: "When activated, the player can serve as a knight in the liege's army."
+ 
+ # Manual Selection
+ kmc_toggle_exclude_label: "K.M."
+ kmc_toggle_exclude_label_tt: "如果未选中，该角色将被排除在骑士经理设置之外，并且可以成为骑士。" 
